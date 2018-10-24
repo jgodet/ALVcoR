@@ -1,11 +1,11 @@
-Package: spectralPhasoR
+Package: ALVcoR
 Type: Package
-Title: spectral Phasor representation of sPAINT data
+Title: Fluorecence Correlation Spectroscopy using ALV-5000E correlator
 Version: 0.1.1
 Author: JuG
 Maintainer: Julien Godet <julien.godet@unistra.fr>
-Description: Compute and analyse spectrally resolved single molecule localisation microscopy (SR-SMLM) data using spectral phasor.
+Description: Read and analysis of ALV-5000E correlator data
 License: GPL3
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
