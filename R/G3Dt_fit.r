@@ -20,7 +20,7 @@
 #' @export
 
 
-G3Dt_fit<- function (frm, init) {
-  nls(G ~ (1/N) * (1 + Tp/td)^(-1) * (1 + Tp/td/9)^(-1/2) * (1 + (ft/(1 - ft)) * exp(-Tp/tt)),
+G3Dt_fit<- function (frm, init,a=9) {
+  nls(G ~ (1/N) * (1 + Tp/td)^(-1) * (1 + Tp/td/a)^(-1/2) * (1 + (ft/(1 - ft)) * exp(-Tp/tt)),
       data = frm, start = init)
 }
