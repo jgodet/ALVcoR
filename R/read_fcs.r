@@ -10,7 +10,8 @@
 #' @param nrows number of lines of the correlation data block
 #' @details 
 #' @examples 
-#' flist <- list.files(path=path.dir, pattern="[.]ASC$",full.names = TRUE )
+#' 
+#' flist <- list.files(path=paste(getwd(),"/",path.dir,sep=''), pattern="[.]ASC$",full.names = TRUE )
 #' dss <- read_fcs(path=flist[1])
 
 #' @return data.frame (Tp == lagtime,  G == autocorrelation curve)

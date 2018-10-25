@@ -13,8 +13,8 @@
 #' fcsData <- stack_fcs(path.dir)
 #' #median curve
 #' fcsmed <- data.frame(Tp = fcsData$Time, G = apply(fcsData[,-1],1,median))
-#' G3D <- G3D_fit(fcsmed[c(-1:-4),],init=list(N=30,td=0.1))
-#' plot_fcs(fcsmed,addFit = T,model = G3D)
+#' G3D <- G3D_fit(fcsmed[c(-1:-4),],init=list(N=30,td=0.1),a=9)
+#' plot_fcs(fcsmed,addFit = T,model = G3D,ylim=c(0,.04))
 #' @return 
 #' @export
 

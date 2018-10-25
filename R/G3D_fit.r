@@ -10,7 +10,11 @@
 #' @param init initialization parameters list 
 #' @details 
 #' @examples 
-#'G3Dt <-G3Dt_fit(dss[c(-4:-1),],init=list(N=3,td=1))  #td en msec
+#' #'a' floating
+#' G3D_fit(fcsmed[-10:-1,],init=list(N=3,td=1, a=9), algorithm = "port", lower=list(N=0, td=0, a=0), upper=list(N=1000, td=10, a=10))
+#' # a fixed
+#' G3Dt <-G3D_fit(fcsmed[-10:-1,],init=list(N=3,td=1), a = 9.4)
+
 #'print(summary(G3D) )
 #'cbind(coef(G3D),confint(G3D))
 #'#check fit diagnostic
@@ -21,7 +25,11 @@
 #' @export
 
 
-G3D_fit<- function (frm, init) {
-    nls(G ~ (1/N) * (1 + Tp/td)^(-1) * (1 + Tp/td/9)^(-1/2), 
-        data = frm, start = init)
+G3D_fit<- function (frm, init,a,...) {
+    nls(G ~ (1/N) * (1 + Tp/td)^(-1) * (1 + Tp/td/a)^(-1/2), 
+        data = frm, start = init,... )
 }
+
+
+
+

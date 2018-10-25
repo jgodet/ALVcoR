@@ -2,9 +2,9 @@
 % Please edit documentation in R/read_fcs.r
 \name{read_fcs}
 \alias{read_fcs}
-\title{Read ALV .asc files}
+\title{Read correlation block in ALV .asc files}
 \usage{
-read_fcs(path, nrows = 334)
+read_fcs(path, nrows = 181)
 }
 \arguments{
 \item{path}{path to the .asc file}
@@ -15,10 +15,12 @@ read_fcs(path, nrows = 334)
 data.frame (Tp == lagtime,  G == autocorrelation curve)
 }
 \description{
-Read ALV .asc files
+Read correlation block in ALV .asc files
 }
 \examples{
 
+flist <- list.files(path=paste(getwd(),"/",path.dir,sep=''), pattern="[.]ASC$",full.names = TRUE )
+dss <- read_fcs(path=flist[1])
 }
 \author{
 JuG
