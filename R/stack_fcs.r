@@ -19,12 +19,12 @@
 #' @export
 
 
-stack_fcs<- function(path.dir){
+stack_fcs<- function(path.dir,...){
   flist <- list.files(path=path.dir, pattern="[.]ASC$",full.names = T)
   nom <- list.files(path=path.dir, pattern="[.]ASC$")
   flist<-flist[grep('.ASC', flist)]
   nom <- gsub(pattern = ".ASC",replacement = "",x = as.character(nom[grep('.ASC', flist)]))
-  fcsframe <- as.data.frame(lapply(flist, read_fcs   ))
+  fcsframe <- as.data.frame(lapply(flist, read_fcs,...   ))
   fcsframe <- fcsframe[,c(1,seq(2,dim(fcsframe)[2],by=2))]
   colnames(fcsframe)<- c("Time", nom)
   return(fcsframe)
