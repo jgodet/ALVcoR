@@ -15,7 +15,7 @@ G3D_fit(frm, init, a, ...)
 nls object
 }
 \description{
-$G = \frac{1}{N}   \left( 1 + \frac{Tp}{td} \right)^{-1}  \left(1 + \frac{Tp}{td/9} \right)^{-1/2}$
+\code{$G = \frac{1}{N}   \left( 1 + \frac{Tp}{td} \right)^{-1}  \left(1 + \frac{Tp}{td/9} \right)^{-1/2}$}
 }
 \examples{
 #'a' floating

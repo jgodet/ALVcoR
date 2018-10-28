@@ -5,7 +5,7 @@
 
 #' Fit autocorrelation curve assuming free 3D diffusion in a 3‐dimensional Gaussian excitation volume
 #' @author JuG
-#' @description $G = \frac{1}{N}   \left( 1 + \frac{Tp}{td} \right)^{-1}  \left(1 + \frac{Tp}{td/9} \right)^{-1/2}$
+#' @description \code{$G = \frac{1}{N}   \left( 1 + \frac{Tp}{td} \right)^{-1}  \left(1 + \frac{Tp}{td/9} \right)^{-1/2}$}
 #' @param frm dataframe with Tp (lagtime) and G (autocorrelation) data
 #' @param init initialization parameters list 
 #' @details 

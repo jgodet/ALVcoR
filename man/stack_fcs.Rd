@@ -4,7 +4,7 @@
 \alias{stack_fcs}
 \title{Read correlation block in ALV for all .asc files in a directory}
 \usage{
-stack_fcs(path.dir)
+stack_fcs(path.dir, ...)
 }
 \arguments{
 \item{path.dir}{path to directory containing the .asc files}

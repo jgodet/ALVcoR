@@ -5,7 +5,7 @@
 
 #' Fit autocorrelation curve assuming free 3D diffusion with triplet state in a 3‐dimensional Gaussian excitation volume
 #' @author JuG
-#' @description $G = \frac{1}{N}   \left( 1 + \frac{Tp}{td} \right)^{-1}  \left(1 + \frac{Tp}{td/9} \right)^{-1/2}  \left(1 + \frac{ft}{1 - ft} exp(-Tp/tt) \right)$
+#' @description \code{$G = \frac{1}{N}   \left( 1 + \frac{Tp}{td} \right)^{-1}  \left(1 + \frac{Tp}{td/9} \right)^{-1/2}  \left(1 + \frac{ft}{1 - ft} exp(-Tp/tt) \right)$}
 #' @param frm dataframe with Tp (lagtime) and G (autocorrelation) data
 #' @param init initialization parameters list 
 #' @details 

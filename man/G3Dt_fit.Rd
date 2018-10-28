@@ -15,7 +15,7 @@ G3Dt_fit(frm, init, a = 9)
 nls object
 }
 \description{
-$G = \frac{1}{N}   \left( 1 + \frac{Tp}{td} \right)^{-1}  \left(1 + \frac{Tp}{td/9} \right)^{-1/2}  \left(1 + \frac{ft}{1 - ft} exp(-Tp/tt) \right)$
+\code{$G = \frac{1}{N}   \left( 1 + \frac{Tp}{td} \right)^{-1}  \left(1 + \frac{Tp}{td/9} \right)^{-1/2}  \left(1 + \frac{ft}{1 - ft} exp(-Tp/tt) \right)$}
 }
 \examples{
 G3Dt <-G3Dt_fit(dss[c(-1:-4),],init=list(N=50,td=0.06,ft=.75,tt=.01))
